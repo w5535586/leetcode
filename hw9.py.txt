@@ -1,0 +1,8 @@
+class Solution(object):
+    def heightChecker(self, heights):
+        arr=sorted(heights)
+        c=0
+        for index,value in enumerate(heights):
+            if heights[index] != arr[index]:
+                c = c+1
+        return c
